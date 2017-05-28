@@ -1,6 +1,5 @@
 var gulp = require('gulp');
 var watch = require('gulp-watch');
-var jslint = require('gulp-jslint');
 var webserver = require('gulp-webserver');
 
 var src = './';
@@ -13,10 +12,6 @@ gulp.task('css', function(){
 });
 
 gulp.task('js', function(){
-  return gulp.src([src +'js'])
-            .pipe(jslint())
-            .pipe(jslint.reporter('default', errorsOnly))
-            .pipe(jslint.reporter('stylish', options));  
 
 });
 
