@@ -1,0 +1,9 @@
+g.tick line{
+    stroke: green;
+}
+
+g.tick text{
+    stroke:#000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
